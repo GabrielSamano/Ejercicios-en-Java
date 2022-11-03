@@ -15,7 +15,7 @@ public class Matriz {
         ImprimirMatriz(matriz1);
     }
     public static int [] [] definirTamano (int [] [] x){
-        System.out.println("Ingrese el tamaño de la matriz Filas & Columnas"); /* Por ejemplo 2&2 se creara una matriz de 2*2 */
+        System.out.println("Ingrese el tamaño de la matriz Filas & Columnas"); /* Por ejemplo 2&2 se creara una matriz de 2x2 */
         String datosIngresados = sc.next();
 
         String[] datos = datosIngresados.split("&");
