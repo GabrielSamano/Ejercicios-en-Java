@@ -14,3 +14,5 @@ enum Nivel{
         System.out.println(myVar);
     }
  }
+
+
