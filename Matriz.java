@@ -43,3 +43,5 @@ public class Matriz {
         }
     }
 }
+
+// Creacion de una matriz con parametros que tu escoges 
