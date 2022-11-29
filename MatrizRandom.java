@@ -8,7 +8,7 @@ import java.util.Random;
             {
                 for(int j=0;j<3;j++)
                 {
-                    a[i][j]=r.nextInt(100);
+                    a[i][j]=r.nextInt(100); // La matriz se creara con numeros random del 1 al 100 
                     System.out.print(a[i][j]+"\t");
                 }
 
