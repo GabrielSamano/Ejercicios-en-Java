@@ -12,5 +12,11 @@ public class METODO{
         }
         return apariciones;
     }
+    public static double numeroMenor(double matriz[][]){
+        double dato = matriz[0][0];
+        for (int i = 0; i < matriz.lenght; i++) {
+            
+        }
 
+    }
 }
