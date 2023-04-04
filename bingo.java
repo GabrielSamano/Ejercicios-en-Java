@@ -35,13 +35,13 @@ public class Bingo {
 
     // Ordena las columnas
     for (int j = 0; j < 9; j++) {
-      ArrayList<Integer> columna = sacaColumna(j, carton);
+      ArrayList<Integer> columna = sacaColumna(j, tablero);
       Collections.sort(columna);
       meteColumna(j, columna, carton);
     }
     
-    meteHuecos(carton);
-    pintaCarton(carton);
+    meteHuecos(tablero);
+    pintaCarton(tablero);
   }
 
   public static int aleatorio(int min, int max) {
