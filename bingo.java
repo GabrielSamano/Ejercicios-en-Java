@@ -5,7 +5,7 @@ import java.util.Collections;
 public class Bingo {
 
   public static void main(String[] args) {
-    int[][] carton = new int[3][9];
+    int[][] tablero = new int[3][9];
     ArrayList<Integer> numerosGenerados = new ArrayList<>();
 
     int n;
@@ -29,7 +29,7 @@ public class Bingo {
         } while (numerosGenerados.contains(n));
 
         numerosGenerados.add(n);
-        carton[i][j] = n;
+        tablero[i][j] = n;
       }
     }
 
@@ -48,7 +48,7 @@ public class Bingo {
     return (int) (Math.random() * (max - min + 1) + min);
   }
 
-  public static void pintaCarton(int[][] carton) {
+  public static void pintaCarton(int[][] tablero) {
     for (int[] fila : carton) {
       for (int numero : fila) {
         if (numero == 0) {
@@ -61,21 +61,21 @@ public class Bingo {
     }
   }
   
-  public static ArrayList<Integer> sacaColumna(int c, int[][] carton) {
+  public static ArrayList<Integer> sacaColumna(int c, int[][] tablero) {
     ArrayList<Integer> aux = new ArrayList<>();
     for (int i = 0; i < 3; i++) {
-      aux.add(carton[i][c]);
+      aux.add(tablero[i][c]);
     }
     return aux;
   }
   
-  public static void meteColumna(int c, ArrayList<Integer> columna, int[][] carton) {
+  public static void meteColumna(int c, ArrayList<Integer> columna, int[][] tablero) {
     for (int i = 0; i < 3; i++) {
-      carton[i][c] = columna.get(i);
+      tablero[i][c] = columna.get(i);
     }
   }
   
-  public static void meteHuecos(int[][] carton) {
+  public static void meteHuecos(int[][] tablero) {
     for (int i = 0; i < 3; i++) {
       int huecos = 0;
       do {
