@@ -4,7 +4,7 @@ public class Ejercicio2 {
     public static void main(String[] args) {
         Scanner sn=new Scanner(System.in);
 
-        System.out.println("Introduzca un numero"); // INgresas un numero entero 
+        System.out.println("Introduzca un numero"); // Ingresas un numero entero 
 
         int num=sn.nextInt();
 
