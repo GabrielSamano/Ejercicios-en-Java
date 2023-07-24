@@ -12,7 +12,7 @@ public class hash{
         System.out.println(capitalCity);
         // se utiliza size para saber cuantos elementos hay
         System.out.println(capitalCity.size());
-        //Bucle for para recorrer los elemtos del hashmap
+        //Bucle for para recorrer los elementos del hashmap
         for (String i : capitalCity.keySet()) {
             System.out.println(i);
           }
